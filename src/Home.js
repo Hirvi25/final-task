@@ -38,7 +38,7 @@ class Home extends React.Component{
             pathname:"/add",
             data:{}
         }} >
-        <button type="button" className="btn btn-warning mt4 grow shadow-4"><IoIosAddCircle /> Add</button></Link>
+        <button type="button" className="btn btn-warning mt4 grow shadow-4 pa2 "><IoIosAddCircle /> Add</button></Link>
         <div className="userdatastyle "> {arrayofuser}</div>       
       </header>
     </div>

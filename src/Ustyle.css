@@ -22,9 +22,13 @@
     bottom: -15px;  
 }
 .title{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
     font-size: medium;
     width: 240px;
-    height: 50px;
+    height: 70px;
     overflow-x: auto;
     text-align:justify; 
     border-radius: 9px;
@@ -34,8 +38,8 @@
     display: none;
 }
 .body{
-    padding-top: 3px;
-    margin-top: 6px;
+    padding: 20px;
+    margin-top: 30px;
     font-size: small;
     width: 240px;
     height: 150px;
@@ -46,18 +50,20 @@
     display: none;
 }
 .editbutton{
-    
+    width: 30px;
     margin-left: 10px;
-    background: rgba(0, 0, 0, .5);
-    border: none;
+    background:white;
+    border: 0;
     border-radius: 100%;
 }
 
 .deletebutton{
-    
+    padding-left: 4px;
+    align-content: center;
+    width: 30px;
     margin-left: 180px;
-    background: rgba(0, 0, 0, .5);
-    border: none;
+    background: white;
+    border: 0;
     border-radius: 100%;
 }
 
