@@ -1,5 +1,5 @@
 .userdatastyle{
-   width: 900px;
+    width: 1200px;
     padding: 20px;
     margin-top: 3;
     display: flex;
@@ -8,19 +8,60 @@
     justify-content: space-around;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    
+    position: relative;
+    top: -10px;  
 }
 .data{
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    border-radius: 9px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+}
+.buttons{
+    position: relative;
+    bottom: -15px;  
 }
 .title{
-    font-size: small;
-    width: 190px;
+    font-size: medium;
+    width: 240px;
     height: 50px;
-     text-align: center;
     overflow-x: auto;
-    overflow-y: auto; 
+    text-align:justify; 
+    border-radius: 9px;
+    background-color: gray;
+}
+.title::-webkit-scrollbar {
+    display: none;
+}
+.body{
+    padding-top: 3px;
+    margin-top: 6px;
+    font-size: small;
+    width: 240px;
+    height: 150px;
+    overflow-x: auto;
     text-align:justify; 
 }
+.body::-webkit-scrollbar {
+    display: none;
+}
+.editbutton{
+    
+    margin-left: 10px;
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    border-radius: 100%;
+}
+
+.deletebutton{
+    
+    margin-left: 180px;
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    border-radius: 100%;
+}
+
+
+
+
+
