@@ -3,27 +3,52 @@ import './App.css';
 import './Add.css'
 import axios from 'axios';
 
-const Add =(props) =>{
-   
-    return(
-    <div className="App">
-      <header className="App-header">
-            <div className="addform">
-                <form onSubmit={props.location.data.id?editData:addData}>
-                    <input name="id" type="hidden" value={ props.location.data.id? props.location.data.id: 101}/>
-                    <input className="form-control" type="text" name="title" placeholder="Title"
-                         value={ props.location.data.title? props.location.data.title: null}/><br/>
-                    <input className="form-control" type="text" name="description" placeholder="Description"
-                        value={ props.location.data.body? props.location.data.body: null}/><br/>
-                    <input className="btn btn-primary my-1 grow" type="submit"/>
-                </form>
-            </div>
-      </header>
-    </div>
+
+class Add extends  React.Component{
+
+    constructor(props){
+      super(props);
+      if(this.props){
+      this.state ={
+        title: this.props.location.data.title,
+        description:this.props.location.data.body,
+      }
+    }
+    else{
+        this.state ={
+            title: '',
+            description:'',
+          }   
+    }
+    
+    }
+
+    render(){
+        return(
+        <div className="App">
+            <header className="App-header">
+                <div className="addform">
+                    <form onSubmit={this.props.location.data.id?this.editData:this.addData}>
+                        <input name="id" type="hidden" value={ this.props.location.data.id? this.props.location.data.id: 101}/>
+                        
+                        <input className="form-control" type="text" name="title" placeholder="Title"
+                            value={ this.state.title } onChange={this.handle}/><br/>
+                        <input className="form-control" type="text" name="description" placeholder="Description"
+                            value={this.state.description } onChange={this.handle}/><br/>
+                        <input className="btn btn-primary my-1 grow" type="submit"/>
+                    </form>
+                </div>
+            </header>
+        </div>
     )
+    }
+
+
+handle = (event) => {
+    this.setState( {  [event.target.name] : [event.target.value] } )      
 }
 
-const addData = (e) =>{
+addData = (e) =>{
     e.preventDefault();
     return(
         axios.post('https://jsonplaceholder.typicode.com/posts', {
@@ -43,7 +68,7 @@ const addData = (e) =>{
     )
 }
 
-const editData = (e) =>{
+editData = (e) =>{
     e.preventDefault();
     return(
         axios.put(`https://jsonplaceholder.typicode.com/posts/${e.target.elements.id.value}`, {
@@ -63,5 +88,5 @@ const editData = (e) =>{
     )
 }
 
-
+}
 export default Add;

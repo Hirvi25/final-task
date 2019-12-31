@@ -26,7 +26,7 @@ class Home extends React.Component{
   };
 
   render(){
-    console.log(this.state);
+    // console.log(this.state);
     const arrayofuser = this.state.user.map((data, i) => {
       return (<Userdata key={this.state.user[i].id} id={this.state.user[i].id} title={this.state.user[i].title} body={this.state.user[i].body}/>);
     })
