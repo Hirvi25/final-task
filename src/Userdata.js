@@ -10,6 +10,7 @@ const Userdata = (props) =>{
     
     return(
         <div>
+            
             <div className="buttons">
                 <button type="button" className="deletebutton grow" onClick={()=>deleteUser(props.id)}><MdDelete /></button>
                 <Link to={{

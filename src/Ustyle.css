@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap);
 .userdatastyle{
     width: 1200px;
     padding: 20px;
@@ -22,6 +23,8 @@
     bottom: -15px;  
 }
 .title{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -38,6 +41,8 @@
     display: none;
 }
 .body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
     padding: 20px;
     margin-top: 30px;
     font-size: small;
