@@ -40,7 +40,7 @@ class Add extends  React.Component{
                 </div>
             </header>
         </div>
-    )
+        )
     }
 
 
@@ -64,7 +64,6 @@ addData = (e) =>{
         })
         .then(json => console.log(json.data))
         .then(alert('Data is Added....'))
-
     )
 }
 

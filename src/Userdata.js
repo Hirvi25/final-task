@@ -10,7 +10,6 @@ const Userdata = (props) =>{
     
     return(
         <div>
-            
             <div className="buttons">
                 <button type="button" className="deletebutton grow" onClick={()=>deleteUser(props.id)}><MdDelete /></button>
                 <Link to={{
@@ -20,12 +19,12 @@ const Userdata = (props) =>{
                         body:props.body,
                         id:props.id
                     }
-                }} >
-                    <button type="button" className="editbutton grow" ><FaUserEdit /></button>
+                    }} 
+                >
+                <button type="button" className="editbutton grow" ><FaUserEdit /></button>
                 </Link>
             </div>
             <div className="data  ma1 bg-white black-90 dib pa1 tc">
-            
                 <p className="title">  {props.title}</p>
                 <p className="body">  {props.body}</p>
             </div> 
