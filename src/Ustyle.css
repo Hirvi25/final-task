@@ -15,9 +15,20 @@
 .data{
     text-align: center;
     width: 250px;
-    border-radius: 9px;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+    border-radius: 50px 5px 50px 5px; 
+    box-shadow:10px 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
+.addButton{
+    margin-left: 340%;
+    margin-bottom: 30px;
+    width: 140px;
+    height: 50px;
+    border-radius: 30px 5px 30px 5px; 
+    /* box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.1); */
+    color: white;
+    background-color: #68AE4A;
+}
+
 .buttons{
     position: relative;
     bottom: -15px;  
@@ -30,12 +41,13 @@
     margin-right: 0;
     padding: 20px;
     font-size: medium;
-    width: 240px;
-    height: 70px;
+    width: 250px;
+    height: 80px;
     overflow-x: auto;
-    text-align:justify; 
-    border-radius: 9px;
-    background-color: gray;
+    text-align:center; 
+    border-radius:  50px 5px 50px 5px;
+    background-color: #68AE4A;
+    color: white;
 }
 .title::-webkit-scrollbar {
     display: none;
@@ -44,37 +56,41 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Playfair Display', serif;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: small;
-    width: 240px;
+    width: 250px;
     height: 150px;
     overflow-x: auto;
     text-align:justify; 
+    color: gray;
 }
+
 .body::-webkit-scrollbar {
     display: none;
 }
 .editbutton{
+    color: white;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     width: 30px;
+    height: 30px;
     margin-left: 10px;
-    background:white;
+    background:#68AE4A;
     border: 0;
     border-radius: 100%;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
 }
-
 .deletebutton{
+    color: white;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     padding-left: 4px;
-    align-content: center;
     width: 30px;
+    height: 30px;
     margin-left: 180px;
-    background: white;
+    background: #68AE4A;
     border: 0;
     border-radius: 100%;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
 }
-
-
 
 
 

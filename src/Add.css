@@ -1,27 +1,48 @@
 .addform{
     display: flex;
-    background-color: white;
+    background-color: #68AE4A;
     height: 300px;
     width: 300px;
     text-align: center;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    border-radius: 50px 5px 50px 5px; 
+    box-shadow:10px 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 input[type=text] {
     width: 100%;
     box-sizing: border-box;
-    border: 2px solid gray;
+    border: 2px solid #80AE4A;
     border-radius: 10px;
+    color: #68AE4A;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
-input[type=submit] {
-    background-color: gray;
-    border: 2px solid gray;
-    border-radius: 5px;
+input[type=text]:focus {
+    border-color:white;
+    color: #68AE4A;
 }
+input[type=submit]:focus {
+    border-color:white;
+    color: white;
+    background-color:#68AE4A;
+}
+input[type=submit] {
+    color: #68AE4A;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
 input[type=submit]:hover{
-    background-color: #282c34;
-    border-color: #282c34;
+    background-color: #68AE4A;
+    color: white;
+    border-color: white;
+}
+
+h1{
+    color: #68AE4A;
 }

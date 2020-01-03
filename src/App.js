@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import './Ustyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'tachyons';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
